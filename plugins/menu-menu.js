@@ -534,8 +534,28 @@ const handler = async (m, { conn, command, text, args, usedPrefix }) => {
 ⌘ 
 𝐀𝐈-𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏 𝐁𝐎𝐓 𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐃 𝐁𝐘 𝐁𝐄𝐍𝐒𝐎𝐍-𝐓𝐄𝐂𝐇⌛
 ⧪══════════════⧭✯
+╭───────✰✰✰
+│ 🖤 Bot Menu
+│ 🖤 Owner Menu
+│ 🖤 Group Menu
+│ 🖤 Fun Menu
+│ 🖤 Reaction Menu
+│ 🖤 Downloader Menu
+│ 🖤 Game Menu
+│ 🖤 Logo Menu
+│ 🖤 Sticker Menu
+│ 🖤 Audio Menu
+│ 🖤 News Menu
+│ 🖤 Economy Menu
+│ 🖤 Anime Menu
+│ 🖤 NSFW Menu
+│ 🖤 Tools Menu
+│ 🖤 AI Menu
+│ 🖤 Religion Menu
+│ 🖤 Plugin Menu
+╰───────✰✰✰
  `
- const { result, key, timeout } = await conn.sendMessage(
+  const { result, key, timeout } = await conn.sendMessage(
     m.chat,
     { video: { url: menuvid }, caption: infoText.trim(),
     contextInfo: {
