@@ -765,37 +765,35 @@ export async function groupsUpdate(groupsUpdate) {
 Delete Chat
  */
 export async function deleteUpdate(message) {
-  try {
-    if (
-      typeof process.env.antidelete === 'undefined' ||
-      process.env.antidelete.toLowerCase() === 'false'
-    )
-      return
-
-    const { fromMe, id, participant } = message
-    if (fromMe) return
-    let msg = this.serializeM(this.loadMessage(id))
-    if (!msg) return
-    let chat = global.db.data.chats[msg.chat] || {}
-
-    await this.reply(
-      conn.user.id,
-      `
-            ≡ deleted a message 
-            ┌─⊷  𝘼𝙉𝙏𝙄 𝘿𝙀𝙇𝙀𝙏𝙀 
-            ▢ *Number :* @${participant.split`@`[0]} 
-            └─────────────
+    try {
+        const antidelete = process.env.antidelete?.toLowerCase();
+        if (!antidelete || antidelete === 'false') return;
+        const { fromMe, id, participant } = message;
+        if (fromMe) return;
+        const isGroup = message.isGroup;   
+        if (
+            (antidelete === 'private' && isGroup) || // Ignore group messages if 'private' is set
+            (antidelete !== 'all' && antidelete !== 'private') // Ignore invalid values
+        ) {
+            return;
+	}
+        let msg = this.serializeM(this.loadMessage(id));
+        if (!msg) return;
+        await this.reply(
+            conn.user.id,
+            `🚨 *Message Deleted Alert!* 🚨
+📲 *Number:* @${participant.split`@`[0]}  
+✋ *Deleted Below:* 👇  
             `.trim(),
-      msg,
-      {
-        mentions: [participant],
-      }
-    )
-    this.copyNForward(conn.user.id, msg, false).catch(e => console.log(e, msg))
-  } catch (e) {
-    console.error(e)
-  }
+            msg,
+            { mentions: [participant] }
+        );
+        this.copyNForward(conn.user.id, msg, false).catch(e => console.log(e, msg));
+    } catch (e) {
+        console.error(e);
+    }
 }
+
 
 /*
  Polling Update 
