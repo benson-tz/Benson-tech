@@ -514,9 +514,9 @@ const handler = async (m, { conn, command, text, args, usedPrefix }) => {
     },
   }
   const infoText = `
-  ▒▓   𝐁𝐄𝐍𝐒𝐎𝐍 𝐓𝐄𝐂𝐇   ▓▒
+▓   𝐁𝐄𝐍𝐒𝐎𝐍 𝐓𝐄𝐂𝐇   ▓▒
 - Hii ${name} user
-   ⧳═══☙ `BENSONTECH` ☙═⧳
+   ⧳═══☙BENSONTECH☙═⧳
 ❏📚 *Mode:* ${mode}
 ❏💻 *Platform:*𝐍𝐨𝐝𝐞𝐣𝐬
 ❏🌐 *Baileys:* 𝙱𝚎𝚗𝚜𝚘𝚗-𝚋𝚊𝚒𝚕𝚎𝚢𝚜 
@@ -532,33 +532,10 @@ const handler = async (m, { conn, command, text, args, usedPrefix }) => {
 ▒ 🛰️ 𝖕𝖎𝖓𝖌
 ▒🚀 𝖒𝖊𝖓𝖚
 ⌘ 
-`𝐀𝐈-𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏 𝐁𝐎𝐓 𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐃 𝐁𝐘 𝐁𝐄𝐍𝐒𝐎𝐍-𝐓𝐄𝐂𝐇⌛`
-   ⧪══════════════⧭
-     
-
-✯───『 *INFO*』───✯
-╭───────✰✰✰✰✰✰✰
-│ 𖦹 Bot Menu
-│ 𖦹 Owner Menu
-│ 𖦹 Group Menu
-│ 𖦹 Fun Menu
-│ 𖦹 Reaction Menu
-│ 𖦹 Downloader Menu
-│ 𖦹 Game Menu
-│ 𖦹 Logo Menu
-│ 𖦹 Sticker Menu
-│ 𖦹 Audio Menu
-│ 𖦹 News Menu
-│ 𖦹 Economy Menu
-│ 𖦹 Anime Menu
-│ 𖦹 NSFW Menu
-│ 𖦹 Tools Menu
-│ 𖦹 AI Menu
-│ 𖦹 Religion Menu
-│ 𖦹 Plugin Menu
-╰───────✰✰✰✰✰✰✰
+𝐀𝐈-𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏 𝐁𝐎𝐓 𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐃 𝐁𝐘 𝐁𝐄𝐍𝐒𝐎𝐍-𝐓𝐄𝐂𝐇⌛
+⧪══════════════⧭✯
  `
-    const { result, key, timeout } = await conn.sendMessage(
+ const { result, key, timeout } = await conn.sendMessage(
     m.chat,
     { video: { url: menuvid }, caption: infoText.trim(),
     contextInfo: {
