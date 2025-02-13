@@ -46,7 +46,7 @@ const handler = async (m, { conn, command, text, args, usedPrefix }) => {
   const infoText = `
  ▒▓   𝐁𝐄𝐍𝐒𝐎𝐍 𝐓𝐄𝐂𝐇   ▓▒
 - Hii ${name} user
-   ⧳═══☙ `BENSONTECH` ☙═⧳
+   ⧳═══☙BENSONTECH☙═⧳
 ❏📚 *Mode:* ${mode}
 ❏💻 *Platform:*𝐍𝐨𝐝𝐞𝐣𝐬
 ❏🌐 *Baileys:* 𝙱𝚎𝚗𝚜𝚘𝚗-𝚋𝚊𝚒𝚕𝚎𝚢𝚜 
@@ -62,7 +62,7 @@ const handler = async (m, { conn, command, text, args, usedPrefix }) => {
 ▒ 🛰️ 𝖕𝖎𝖓𝖌
 ▒🚀 𝖒𝖊𝖓𝖚
 ⌘ 
-`𝐀𝐈-𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏 𝐁𝐎𝐓 𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐃 𝐁𝐘 𝐁𝐄𝐍𝐒𝐎𝐍-𝐓𝐄𝐂𝐇⌛`
+𝐀𝐈-𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏 𝐁𝐎𝐓 𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐃 𝐁𝐘 𝐁𝐄𝐍𝐒𝐎𝐍-𝐓𝐄𝐂𝐇⌛
    ⧪══════════════⧭
  `
   const { result, key, timeout } = await conn.sendMessage(
