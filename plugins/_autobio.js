@@ -14,7 +14,7 @@ handler.all = async function (m) {
         })) * 1000
     }
     let muptime = clockString(_muptime)
-    let bio = `\n🟢 Time Active ${muptime}\n\n ┃ 😂  By FIREMD`
+    let bio = `\n🟢 Time Active ${muptime}\n\n ┃𝐁𝐄𝐍𝐒𝐎𝐍 𝐓𝐄𝐂𝐇🦄`
     await this.updateProfileStatus(bio).catch(_ => _)
     setting.status = new Date() * 1
   }
@@ -22,7 +22,7 @@ handler.all = async function (m) {
 export default handler
 
 function clockString(ms) {
-  let d = isNaN(ms) ? '--' : Math.floor(ms / 86400000)
+  let d = isNaN(ms) ? '--'ath.floor(ms / 86400000)
   let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000) % 24
   let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
