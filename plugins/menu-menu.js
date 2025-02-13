@@ -529,30 +529,29 @@ const handler = async (m, { conn, command, text, args, usedPrefix }) => {
 │ *${totalfeatures}* Commands
 ╰──────────⧱
   ⧪═══════════════⧭
-▒ 🛰️ 𝖕𝖎𝖓𝖌
-▒🚀 𝖒𝖊𝖓𝖚
-⌘ 
-𝐀𝐈-𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏 𝐁𝐎𝐓 𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐃 𝐁𝐘 𝐁𝐄𝐍𝐒𝐎𝐍-𝐓𝐄𝐂𝐇⌛
+▒ 🛰𝐌𝐀𝐃𝐄 𝐁𝐘 𝐁𝐄𝐍𝐒𝐎𝐍𝐓𝐄𝐂𝐇 
+▒🚀 ᕦ[ •́ ﹏ •̀ ]⊃¤=[]::::::::>
+𝐔𝐒𝐄 𝐍𝐔𝐌𝐁𝐄𝐑𝐒 𝐓𝐎 𝐆𝐄𝐓 𝐄𝐀𝐂𝐇 𝐌𝐄𝐍𝐔⌛
 ⧪══════════════⧭✯
 ╭───────✰✰✰
-│ 🖤 Bot Menu
-│ 🖤 Owner Menu
-│ 🖤 Group Menu
-│ 🖤 Fun Menu
-│ 🖤 Reaction Menu
-│ 🖤 Downloader Menu
-│ 🖤 Game Menu
-│ 🖤 Logo Menu
-│ 🖤 Sticker Menu
-│ 🖤 Audio Menu
-│ 🖤 News Menu
-│ 🖤 Economy Menu
-│ 🖤 Anime Menu
-│ 🖤 NSFW Menu
-│ 🖤 Tools Menu
-│ 🖤 AI Menu
-│ 🖤 Religion Menu
-│ 🖤 Plugin Menu
+│1.  🖤 Bot Menu
+│2.  🖤 Owner Menu
+│3.  🖤 Group Menu
+│4.  🖤 Fun Menu
+│5.  🖤 Reaction Menu
+│6.  🖤 Downloader Menu
+│7.  🖤 Game Menu
+│8.  🖤 Logo Menu
+│9.  🖤 Sticker Menu
+│10. 🖤 Audio Menu
+│11. 🖤 News Menu
+│12. 🖤 Economy Menu
+│13. 🖤 Anime Menu
+│14. 🖤 NSFW Menu
+│15. 🖤 Tools Menu
+│16. 🖤 AI Menu
+│17. 🖤 Religion Menu
+│18. 🖤 Plugin Menu
 ╰───────✰✰✰
  `
   const { result, key, timeout } = await conn.sendMessage(
@@ -609,50 +608,50 @@ handler.before = async (m, { conn }) => {
   } else if (choice === '2') {
     await conn.sendMessage(
       m.chat,
-      { image: { url: 'https://i.imgur.com/dkKqGOv.jpeg' }, caption: ownermenu },
+      { image: { url: 'https://files.catbox.moe/5neqle.jpg' }, caption: ownermenu },
       { quoted: fcontact }
     )
   } else if (choice === '3') {
     await conn.sendMessage(
       m.chat,
-      { image: { url: 'https://i.imgur.com/fhX5C8F.jpeg' }, caption: groupmenu },
+      { image: { url: 'https://files.catbox.moe/5neqle.jpg' }, caption: groupmenu },
       { quoted: fcontact }
     )
   } else if (choice === '4') {
     await conn.sendMessage(
       m.chat,
-      { image: { url: 'https://i.imgur.com/fhX5C8F.jpeg' }, caption: funmenu },
+      { image: { url: 'https://files.catbox.moe/5neqle.jpg' }, caption: funmenu },
       { quoted: fcontact }
     )
   } else if (choice === '5') {
     await conn.sendMessage(
       m.chat,
-      { image: { url: 'https://i.imgur.com/fhX5C8F.jpeg' }, caption: reactmenu },
+      { image: { url: 'https://files.catbox.moe/5neqle.jpg' }, caption: reactmenu },
       { quoted: fcontact }
     )
   } else if (choice === '6') {
     await conn.sendMessage(
       m.chat,
-      { image: { url: 'https://i.imgur.com/fhX5C8F.jpeg' }, caption: dlmenu },
+      { image: { url: 'https://files.catbox.moe/5neqle.jpg' }, caption: dlmenu },
       { quoted: fcontact }
     )
   } else if (choice === '7') {
     await conn.sendMessage(
       m.chat,
-      { image: { url: 'https://i.imgur.com/fhX5C8F.jpeg' }, caption: groupmenu },
+      { image: { url: 'https://files.catbox.moe/5neqle.jpg' }, caption: groupmenu },
       { quoted: fcontact }
     )
   } else if (choice === '8') {
     await conn.sendMessage(
       m.chat,
-      { image: { url: 'https://i.imgur.com/fhX5C8F.jpeg' }, caption: logomenu },
+      { image: { url: 'https://files.catbox.moe/5neqle.jpg' }, caption: logomenu },
       { quoted: fcontact }
     )
   } else if (choice === '9') {
     await conn.sendMessage(
       m.chat,
       {
-        image: { url: 'https://i.imgur.com/fhX5C8F.jpeg' },
+        image: { url: 'https://files.catbox.moe/5neqle.jpg' },
         caption: stickermenu,
       },
       { quoted: fcontact }
@@ -660,50 +659,50 @@ handler.before = async (m, { conn }) => {
   } else if (choice === '10') {
     await conn.sendMessage(
       m.chat,
-      { image: { url: 'https://i.imgur.com/fhX5C8F.jpeg' }, caption: audiomenu },
+      { image: { url: 'https://files.catbox.moe/5neqle.jpg' }, caption: audiomenu },
       { quoted: fcontact }
     )
   } else if (choice === '11') {
     await conn.sendMessage(
       m.chat,
-      { image: { url: 'https://i.imgur.com/fhX5C8F.jpeg' }, caption: newsmenu },
+      { image: { url: 'https://files.catbox.moe/5neqle.jpg' }, caption: newsmenu },
       { quoted: fcontact }
     )
   } else if (choice === '12') {
     await conn.sendMessage(
       m.chat,
-      { image: { url: 'https://i.imgur.com/fhX5C8F.jpeg' }, caption: economy },
+      { image: { url: 'https://files.catbox.moe/5neqle.jpg' }, caption: economy },
       { quoted: fcontact }
     )
   } else if (choice === '13') {
     await conn.sendMessage(
       m.chat,
-      { image: { url: 'https://i.imgur.com/tStJm2M.jpeg' }, caption: animemenu },
+      { image: { url: 'https://files.catbox.moe/5neqle.jpg' }, caption: animemenu },
       { quoted: fcontact }
     )
   } else if (choice === '14') {
     await conn.sendMessage(
       m.chat,
-      { image: { url: 'https://i.imgur.com/fhX5C8F.jpeg' }, caption: nsfwmenu },
+      { image: { url: 'https://files.catbox.moe/5neqle.jpg' }, caption: nsfwmenu },
       { quoted: fcontact }
     )
   } else if (choice === '15') {
     await conn.sendMessage(
       m.chat,
-      { image: { url: 'https://i.imgur.com/fhX5C8F.jpeg' }, caption: toolsmenu },
+      { image: { url: 'https://files.catbox.moe/5neqle.jpg' }, caption: toolsmenu },
       { quoted: fcontact }
     )
   } else if (choice === '16') {
     await conn.sendMessage(
       m.chat,
-      { image: { url: 'https://i.imgur.com/fhX5C8F.jpeg' }, caption: Aimenu },
+      { image: { url: 'https://files.catbox.moe/5neqle.jpg' }, caption: Aimenu },
       { quoted: fcontact }
     )
   } else if (choice === '17') {
     await conn.sendMessage(
       m.chat,
       {
-        image: { url: 'https://i.imgur.com/fhX5C8F.jpeg' },
+        image: { url: 'https://files.catbox.moe/5neqle.jpg' },
         caption: religionmenu,
       },
       { quoted: fcontact }
@@ -711,7 +710,7 @@ handler.before = async (m, { conn }) => {
   } else if (choice === '18') {
     await conn.sendMessage(
       m.chat,
-      { image: { url: 'https://i.imgur.com/fhX5C8F.jpeg' }, caption: pluginmenu },
+      { image: { url: 'https://files.catbox.moe/5neqle.jpg' }, caption: pluginmenu },
       { quoted: fcontact }
     )
   } else {
